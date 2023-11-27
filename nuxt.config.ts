@@ -4,6 +4,10 @@ export default defineNuxtConfig({
   ssr: false,
   srcDir: "src",
   css: ["~/main.css"],
+  app: {
+    baseURL: '/ltheory-blog/',
+    buildAssetsDir: 'assets'
+  },
   modules: [
     "@nuxtjs/tailwindcss",
     "vuetify-nuxt-module",
