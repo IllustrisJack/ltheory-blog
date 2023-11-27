@@ -60,7 +60,7 @@
 </template>
 
 <script setup lang="ts">
-const authorQuery = await queryContent("/authors").findOne();
+const { data } = await useAsyncData('authors', () => queryContent('/authors').findOne())
 
 interface Author {
   name: string;
@@ -68,7 +68,7 @@ interface Author {
   image_url: string;
 }
 
-let authors: Author[] = authorQuery.authors;
+let authors: Author[] = data.value?.authors;
 
 function getAuthor(name: string): Author | undefined {
   for (const author of authors) {

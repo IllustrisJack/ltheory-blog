@@ -70,8 +70,8 @@
 useHead({
   title: "Posts",
 });
-
-const posts = await queryContent("posts").where({ published: true }).find();
+const { data } = await useAsyncData('posts', () => queryContent("posts").where({ published: true }).find())
+const posts = data.value
 sortByIndex(posts);
 
 const postsPerPage = 3;
