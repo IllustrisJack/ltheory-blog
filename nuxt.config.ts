@@ -38,6 +38,9 @@ export default defineNuxtConfig({
         ],
       ],
     },
+    experimental: {
+      clientDB: true
+    }
   },
   security: {
     headers: {
