@@ -1,0 +1,29 @@
+{
+  "name": "ltheory-blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@iconify-json/mdi": "^1.1.56",
+    "@mdi/font": "^7.3.67",
+    "@nuxt/content": "^2.9.0",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.10.1",
+    "@unocss/nuxt": "^0.57.7",
+    "@vueuse/core": "^10.6.1",
+    "nuxt": "^3.8.2",
+    "nuxt-security": "1.0.0-rc.4",
+    "shikiji": "^0.7.4",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwind-typewriter": "^1.0.1",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5",
+    "vuetify-nuxt-module": "^0.7.0"
+  }
+}
