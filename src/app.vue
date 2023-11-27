@@ -10,7 +10,7 @@
         muted
         onloadstart="this.playbackRate=0.25"
         disable-picture-in-picture
-        src="/mp4/LTR_BG_VID.mp4"
+        src="../public/mp4/LTR_BG_VID.mp4"
         type="video/mp4"
         class="absolute inset-0 w-full h-full object-cover z-0 opacity-50"
       />
