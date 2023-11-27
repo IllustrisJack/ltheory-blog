@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col h-screen w-screen justify-center text-center">
     <img
-      src="/svg/LTR_TITLE.svg"
+      src=""
       class="mt-auto mr-auto mb-12 ml-auto px-12 w-auto drop-shadow-md noselect"
       draggable="false"
     />
