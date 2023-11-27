@@ -71,11 +71,12 @@ import type { ParsedContent } from '@nuxt/content/dist/runtime/types';
 useHead({
   title: "Posts",
 });
-const { data } = await useAsyncData('posts', () => queryContent("posts").where({ published: true }).find())
-const posts: ParsedContent[]|null = data?.value
-sortByIndex(posts);
 
+const { data } = await useAsyncData('posts', () => queryContent("posts").where({ published: true }).find())
+console.log("Data", data)
+const posts: ParsedContent[]|null = data?.value
 console.log("Posts", posts)
+sortByIndex(posts);
 
 const postsPerPage = 3;
 const selectedPage = ref(1);
