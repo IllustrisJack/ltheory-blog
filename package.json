@@ -20,6 +20,7 @@
     "@vueuse/core": "^10.6.1",
     "nuxt": "^3.8.2",
     "nuxt-security": "1.0.0-rc.4",
+    "nuxt-svgo": "^3.6.0",
     "shikiji": "^0.7.4",
     "tailwind-scrollbar-hide": "^1.1.7",
     "tailwind-typewriter": "^1.0.1",

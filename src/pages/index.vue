@@ -1,8 +1,7 @@
 <template>
   <div class="flex flex-col h-screen w-screen justify-center text-center">
-    <img
-      :src="url"
-      class="mt-auto mr-auto mb-12 ml-auto px-12 w-auto drop-shadow-md noselect"
+    <LTRTitle
+      class="mt-auto mr-auto mb-12 ml-auto px-12 w-auto text-[4rem] sm:text-[6rem] md:text-[6rem] lg:text-[12rem] xl:text-[14rem] drop-shadow-md noselect"
       draggable="false"
     />
     <p
@@ -24,7 +23,5 @@ useHead({
   title: 'Home',
 })
 
-// help meeee
-import iconUrl from '/svg/LTR_TITLE.svg?url'
-const url = iconUrl.replace("/_nuxt", "")
+import LTRTitle from '~/assets/LTR_Title.svg'
 </script>

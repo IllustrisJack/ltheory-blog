@@ -1,20 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import svgLoader from "vite-svg-loader";
-
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
   srcDir: "src",
   css: ["~/main.css"],
-  vite: {
-    plugins: [svgLoader()],
-  },
   modules: [
     "@nuxtjs/tailwindcss",
     "vuetify-nuxt-module",
     "@unocss/nuxt",
     "nuxt-security",
     "@nuxt/content",
+    "nuxt-svgo"
   ],
   content: {
     navigation: {
