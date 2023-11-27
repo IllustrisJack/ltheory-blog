@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   srcDir: "src",
   css: ["~/main.css"],
   app: {
-    baseURL: '/ltheory-blog/',
+    baseURL: '/',
     buildAssetsDir: 'assets'
   },
   modules: [
