@@ -41,6 +41,9 @@ devDependencies:
   tailwind-typewriter:
     specifier: ^1.0.1
     version: 1.0.1
+  vite-svg-loader:
+    specifier: ^5.1.0
+    version: 5.1.0(vue@3.3.9)
   vue:
     specifier: ^3.3.8
     version: 3.3.9
@@ -8976,6 +8979,15 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - vue
+    dev: true
+
+  /vite-svg-loader@5.1.0(vue@3.3.9):
+    resolution: {integrity: sha512-M/wqwtOEjgb956/+m5ZrYT/Iq6Hax0OakWbokj8+9PXOnB7b/4AxESHieEtnNEy7ZpjsjYW1/5nK8fATQMmRxw==}
+    peerDependencies:
+      vue: '>=3.2.13'
+    dependencies:
+      svgo: 3.0.4
+      vue: 3.3.9
     dev: true
 
   /vite@4.5.0:

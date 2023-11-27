@@ -1,9 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import svgLoader from "vite-svg-loader";
+
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
   srcDir: "src",
   css: ["~/main.css"],
+  vite: {
+    plugins: [svgLoader()],
+  },
   modules: [
     "@nuxtjs/tailwindcss",
     "vuetify-nuxt-module",
@@ -44,7 +49,11 @@ export default defineNuxtConfig({
         "font-src": ["'self'", "https:", "data:"],
         "form-action": ["'self'"],
         "frame-ancestors": ["'self'"],
-        "img-src": ["'self'", "data:", "https://avatars.githubusercontent.com/u/"],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://avatars.githubusercontent.com/u/",
+        ],
         "object-src": ["'none'"],
         "script-src-attr": ["'unsafe-inline'"],
         "style-src": ["'self'", "https:", "'unsafe-inline'"],

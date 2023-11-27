@@ -22,6 +22,7 @@
     "shikiji": "^0.7.4",
     "tailwind-scrollbar-hide": "^1.1.7",
     "tailwind-typewriter": "^1.0.1",
+    "vite-svg-loader": "^5.1.0",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5",
     "vuetify-nuxt-module": "^0.7.0"
