@@ -2,7 +2,7 @@
 published: true
 post_number: 1
 author: 'IllustrisJack'
-title: 'Beginnings 1'
+title: 'Beginnings'
 description: 'The first post on this blog!'
 ---
 # Beginnings

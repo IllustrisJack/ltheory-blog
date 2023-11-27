@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
   srcDir: "src",
-  css: ["~/main.css"],
+  css: ["~/assets/css/main.css"],
   app: {
     baseURL: '/ltheory-blog/',
     buildAssetsDir: 'assets'
