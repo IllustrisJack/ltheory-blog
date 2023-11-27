@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col h-screen w-screen justify-center text-center">
     <LTRTitle
-      class="mt-auto mr-auto mb-12 ml-auto px-12 w-auto text-[4rem] sm:text-[6rem] md:text-[6rem] lg:text-[12rem] xl:text-[14rem] drop-shadow-md noselect"
+      class="mt-auto mr-auto mb-12 ml-auto px-12 w-auto text-[3rem] sm:text-[6rem] md:text-[6rem] lg:text-[12rem] xl:text-[14rem] drop-shadow-md noselect"
       draggable="false"
     />
     <p
