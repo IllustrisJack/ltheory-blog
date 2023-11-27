@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     baseURL: '/ltheory-blog/',
     buildAssetsDir: 'assets'
   },
+  generate: {
+    routes: ["/pages/"],
+  },
   modules: [
     "@nuxtjs/tailwindcss",
     "vuetify-nuxt-module",
