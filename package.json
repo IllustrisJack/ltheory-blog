@@ -16,6 +16,7 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.10.1",
     "@unocss/nuxt": "^0.57.7",
+    "@vitejs/plugin-vue": "^4.5.0",
     "@vueuse/core": "^10.6.1",
     "nuxt": "^3.8.2",
     "nuxt-security": "1.0.0-rc.4",
