@@ -24,11 +24,10 @@
             append-inner-icon="i-mdi:magnify"
             single-line
             hide-details
-            @update:model-value="searchPosts()"
           ></v-text-field>
         </v-card-text>
         <NuxtLink
-          v-for="(child, index) in returnPage(link.children)"
+          v-for="(child, index) in returnPage()"
           :key="child._path"
           :to="child._path"
           :class="[
@@ -47,7 +46,7 @@
         </NuxtLink>
       </div>
       <v-pagination
-        :length="pages.length"
+        :length="pages?.length"
         v-model="selectedPage"
         size="small"
         variant="text"
@@ -66,13 +65,17 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types';
+
 useHead({
   title: "Posts",
 });
 const { data } = await useAsyncData('posts', () => queryContent("posts").where({ published: true }).find())
-const posts = data.value
+const posts: ParsedContent[]|null = data?.value
 sortByIndex(posts);
+
+console.log("Posts", posts)
 
 const postsPerPage = 3;
 const selectedPage = ref(1);
@@ -97,11 +100,18 @@ function newRandomSlideInDirection() {
 }
 
 function returnPage() {
-  const page = pages.value[selectedPage.value - 1] || 0;
-  return page;
+  if (pages.value) {
+    const page = pages.value[selectedPage.value - 1] || 0
+    return page;
+  }
 }
 
-function paginateArray(dataArray) {
+function paginateArray(dataArray: ParsedContent[]|null) {
+  if (!Array.isArray(dataArray)) {
+    console.error("Post array error");
+    return
+  }
+
   const pages = [];
   for (let i = 0; i < dataArray.length; i += postsPerPage) {
     pages.push(dataArray.slice(i, i + postsPerPage));
@@ -109,7 +119,7 @@ function paginateArray(dataArray) {
   return pages;
 }
 
-function sortByIndex(posts) {
+function sortByIndex(posts: ParsedContent[]|null) {
   if (!Array.isArray(posts) || posts.length === 0 || !posts[0].post_number) {
     console.error("Post array error");
     return;
