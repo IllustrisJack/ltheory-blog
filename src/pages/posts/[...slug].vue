@@ -26,13 +26,18 @@
           >
             <a :href="getAuthor(doc.author)?.profile_url" target="_blank">
               <img
-                class="w-12 rounded-full noselect"
+                class="w-[3.1rem] ml-[-1px] rounded-full noselect saturate-50 hover:saturate-100"
                 draggable="false"
                 :src="getAuthor(doc.author)?.image_url"
               />
             </a>
-            <div class="my-auto ml-4 font-mono font-semibold">
-              {{ doc.author }}
+            <div class="flex flex-row my-auto ml-4 font-mono font-semibold">
+              <p>
+              {{ getAuthor(doc.author)?.name }}
+              </p>
+              <p class="ml-2 text-gray-500" v-if="getAuthor(doc.author)?.name == 'Unknown Author'">
+                as {{ doc.author }}
+              </p>
             </div>
             <div class="flex flex-col ml-auto mr-0">
               <div class="mt-0 mb-auto text-right text-lg font-semibold">
@@ -81,6 +86,14 @@ function getAuthor(name: string): Author | undefined {
   for (const author of authors) {
     if (author.name === name) {
       return author;
+    } else {
+      let unknown_author: Author = {
+        name: 'Unknown Author',
+        profile_url: '',
+        image_url: '/img/LTR_LOGO.png'
+      }
+
+      return unknown_author
     }
   }
 }

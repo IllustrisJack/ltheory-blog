@@ -71,7 +71,7 @@ export default {
         "slide-in-left": "slideInFromLeft 0.5s ease-in-out forwards",
         "slide-in-right": "slideInFromRight 0.5s ease-in-out forwards",
         "fade-in": "fadeIn 1s ease forwards",
-      },
+      }
     },
   },
   plugins: [require("tailwind-scrollbar-hide"), require("tailwind-typewriter")],
