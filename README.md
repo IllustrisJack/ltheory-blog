@@ -6,6 +6,7 @@
 ```yaml
 ---
 published: true
+timestamp: '2023-11-29T12:36:54+0000'
 postNumber: 6
 author: 'Author'
 title: 'Title'
@@ -14,8 +15,10 @@ description: 'A post about the Limit Theory Redux'
 ```
 
 - Adjust everything to your needs accordingly
+- The timestamp is in ISO 8601 format, you can use something like [Timestamp Generator](https://timestampgenerator.com) to generate one.
 - If you are not "registered" as an author yet:
 - Edit `src/content/authors.json` and add your data.
+- The author name in the metadata should match the one defined in `authors.json` so the code can automatically fetch all data associated with the author
 - Now write your post in markdown
 - Once you are done open a pull-request & profit :)
 

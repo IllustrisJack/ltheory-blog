@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   ],
   content: {
     navigation: {
-      fields: ["author", "published"],
+      fields: ["author", "published", "timestamp"],
     },
     highlight: {
       theme: "github-dark",
