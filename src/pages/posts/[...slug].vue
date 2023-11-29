@@ -34,8 +34,13 @@
             <div class="my-auto ml-4 font-mono font-semibold">
               {{ doc.author }}
             </div>
-            <div class="my-auto ml-auto mr-2 font-mono font-semibold">
+            <div class="flex flex-col ml-auto mr-0">
+              <div class="mt-0 mb-auto text-right text-lg font-semibold">
               # {{ doc.post_number }}
+              </div>
+              <p v-if="doc.timestamp" class="mt-auto mb-0 text-xs font-semibold">
+                {{ dateFromString(doc.timestamp) }}
+              </p>
             </div>
           </div>
           <ContentRenderer :value="doc" />
@@ -60,6 +65,8 @@
 </template>
 
 <script setup lang="ts">
+import { dateFromString } from '@/composables/useDateFromString';
+
 const { data } = await useAsyncData('authors', () => queryContent('/authors').findOne())
 
 interface Author {

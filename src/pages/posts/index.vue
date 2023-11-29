@@ -42,6 +42,7 @@
             :title="child.title"
             :summary="child.description"
             :index="child.post_number"
+            :timestamp="child.timestamp"
           />
         </NuxtLink>
       </div>
