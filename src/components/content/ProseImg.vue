@@ -5,7 +5,7 @@
     :width="width"
     :height="height"
     draggable="false"
-    class="my-12 px-6 noselect"
+    class="my-6 px-6 mx-auto noselect"
   >
 </template>
 

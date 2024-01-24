@@ -34,7 +34,7 @@
             (index % 2 === 0) === startWithLeft
               ? 'animate-slide-in-left'
               : 'animate-slide-in-right',
-            'w-[18rem] sm:w-[18rem] md:w-[24rem] lg:w-[32rem] my-2 mx-auto bg-gradient-to-r from-gray-500/10 to-gray-500/5 bg-opacity-30',
+            'w-[18rem] sm:w-[18rem] md:w-[24rem] lg:w-[36rem] my-2 mx-auto bg-gradient-to-r from-gray-500/10 to-gray-500/5 bg-opacity-30',
             'first-of-type:rounded-tl-xl first-of-type:rounded-tr-xl last-of-type:rounded-bl-xl last-of-type:rounded-br-xl'
           ]"
         >

@@ -6,10 +6,10 @@
       <div class="text-xs font-semibold">by {{ props.author }}</div>
     </div>
     <div class="flex flex-col ml-auto mr-0">
-      <div class="mt-0 mb-auto mr-0 text-right text-lg font-semibold">
+      <p class="mt-0 mb-auto mr-0 text-right text-lg font-semibold">
         # {{ props.index }}
-      </div>
-      <p v-if="props.timestamp" class="mt-auto mb-0 text-xs font-semibold">
+      </p>
+      <p v-if="props.timestamp" class="mt-auto mb-0 mr-0 text-right text-xs font-semibold">
         {{ dateFromString(props.timestamp) }}
       </p>
     </div>

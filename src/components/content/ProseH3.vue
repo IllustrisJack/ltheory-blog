@@ -1,5 +1,5 @@
 <template>
-  <h3 :id="id" class="text-[1.75rem] mt-2 text-left">
+  <h3 :id="id" class="text-[1.25rem] font-semibold my-1 text-left">
     <a
       v-if="id && generate"
       :href="`#${id}`"
