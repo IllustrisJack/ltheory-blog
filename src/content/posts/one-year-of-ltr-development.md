@@ -71,7 +71,7 @@ With the Limit Theory Launcher you can:
 - Easily access your game config via a button in the program
 
 ## Whats next?
-In the next blog post i'll be adressing what things are planned and the challenges we are facing for 2024. Keep tuned!
+In the next blog post we'll be adressing what things are planned and the challenges we are facing for 2024. Keep tuned!
 <br><br>
 *I'm sorry if this was too technical, sadly at this stage of development we are still building the foundation of the game and it's engine. While progress here might be exciting for programmers & scripters - the others might have to wait for more exciting posts which go deeper into gameplay systems. Thanks for reading anyway + i'd be happy about some feedback on the Discord!*
 
