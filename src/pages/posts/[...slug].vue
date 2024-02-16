@@ -86,15 +86,14 @@ function getAuthor(name: string): Author | undefined {
   for (const author of authors) {
     if (author.name === name) {
       return author;
-    } else {
-      let unknown_author: Author = {
-        name: 'Unknown Author',
-        profile_url: '',
-        image_url: '/img/LTR_LOGO.png'
-      }
-
-      return unknown_author
-    }
+    } 
   }
+
+  let unknown_author: Author = {
+    name: 'Unknown Author',
+    profile_url: '',
+    image_url: '/img/LTR_LOGO.png'
+  }
+  return unknown_author
 }
 </script>
