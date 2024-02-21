@@ -22,7 +22,7 @@ Since the engine has been converted to Rust we have been working on swapping out
 
 - Replaced the proprietary FMOD audio library with an open source rust equivalent: Kira audio library. 
 - Replaced SDL2 with Winit for Window context creation
-- (Upcoming) Replaced the Bullet physics library with the Rapier physics library which should be more performant
+- Replaced the Bullet physics library with the Rapier physics library which should be more performant
 - Added Glam math library
 
 ## Additional engine systems
