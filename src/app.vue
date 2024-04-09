@@ -24,19 +24,34 @@
         class="absolute bottom-8 left-4 h-fit z-50 text-gray-500 hover:text-white text-sm font-mono"
         >Privacy</NuxtLink
       >
-      <div class="absolute bottom-6 right-6 h-fit z-50 scale-100 md:scale-[1.5] lg:scale-[2] text-gray-500 hover:text-white">
+      <div
+        class="absolute bottom-6 right-6 h-fit z-50 scale-100 md:scale-[1.5] lg:scale-[2] text-gray-500 hover:text-white"
+      >
         <a href="https://github.com/Limit-Theory-Redux/ltheory" target="_blank">
-          <v-icon class="i-mdi-github"/>
+          <v-icon class="i-mdi-github" />
         </a>
       </div>
-      <NuxtPage
+      <div
+        :class="{ 'animate-fade-in': !hasFadedInOnce }"
         draggable="false"
-        class="z-20 animate-fade-in backdrop-blur-[4px] backdrop-saturate-[75%] "
+        class="z-20 backdrop-blur-[4px] backdrop-saturate-[75%]"
+      >
+        <NuxtPage />
+      </div>
       />
     </div>
   </main>
 </template>
 
 <script setup>
-let dynamicBg = ref(true);
+const dynamicBg = ref(true);
+const hasFadedInOnce = ref(false);
+
+onMounted(() => {
+  if (!hasFadedInOnce.value) {
+    setTimeout(() => {
+      hasFadedInOnce.value = true;
+    }, 5000);
+  }
+});
 </script>

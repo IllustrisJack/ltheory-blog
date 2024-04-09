@@ -70,8 +70,8 @@ export default {
         "slide-in-bottom": "slideInFromBottom 0.25s ease-in-out forwards",
         "slide-in-left": "slideInFromLeft 0.5s ease-in-out forwards",
         "slide-in-right": "slideInFromRight 0.5s ease-in-out forwards",
-        "fade-in": "fadeIn 1s ease forwards",
-      }
+        "fade-in": "fadeIn 5s ease forwards",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar-hide"), require("tailwind-typewriter")],
