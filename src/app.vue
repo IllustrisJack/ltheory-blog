@@ -51,7 +51,7 @@ onMounted(() => {
   if (!hasFadedInOnce.value) {
     setTimeout(() => {
       hasFadedInOnce.value = true;
-    }, 5000);
+    }, 1050);
   }
 });
 </script>
