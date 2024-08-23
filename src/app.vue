@@ -38,7 +38,6 @@
       >
         <NuxtPage />
       </div>
-      />
     </div>
   </main>
 </template>
